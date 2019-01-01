@@ -1,10 +1,10 @@
  
 set(TARGET_NAME asn.1)
 list(APPEND HEADER_FILES
-        include/
+        "include"
 )
 list(APPEND SRC_FILES 
-    source/*.cpp
+    "source/*.cpp"
 )
 add_library(${TARGET_NAME} SHARED ${SRC_FILES})
 target_include_directories(${TARGET_NAME} ${HEADER_FILES})
